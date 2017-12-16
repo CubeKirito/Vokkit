@@ -5,7 +5,11 @@ class PluginManager {
 
     load() {
         this.loadedPlugins = {
-
+ARSwift: require('../../../plugins/ARSwift/client/index.js'),
+GetId: require('../../../plugins/GetId/client/index.js'),
+JavaMAL: require('../../../plugins/JavaMAL/client/index.js'),
+MuseClientSupport: require('../../../plugins/MuseClientSupport/client/index.js'),
+WebVR: require('../../../plugins/WebVR/client/index.js')
         };
         for (let i in this.loadedPlugins) {
             let plugin = new (this.loadedPlugins[i])();

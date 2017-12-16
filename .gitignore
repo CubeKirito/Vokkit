@@ -62,5 +62,5 @@ typings/
 *.bak
 
 # Private files
-public/dist
+#public/dist
 jsconfig.json
